@@ -3,9 +3,9 @@
     --header-height: 3rem;
     
     /*========== Colors ==========*/
-    --primary-color: #8a70ff;
-    --primary-color-alt: #7760e6;
-    --secondary-color: #ff7659;
+    --primary-color: #003DA5;
+    --primary-color-alt: #003295;
+    --secondary-color: #FFB81C;
     --title-color: #eeeeee;
     --text-color: #b3b3b3;
     --text-color-light: #808080;
@@ -191,7 +191,7 @@ button, input, textarea {
 
 .profile-img:hover {
     transform: scale(1.03);
-    box-shadow: 0 8px 24px rgba(138, 112, 255, 0.25);
+    box-shadow: 0 8px 24px rgba(0, 61, 165, 0.25);
 }
 
 /*=============== HEADER ===============*/
@@ -524,7 +524,7 @@ button, input, textarea {
 .skill-bar {
     height: 5px;
     border-radius: 2.5px;
-    background-color: rgba(138, 112, 255, 0.2);
+    background-color: rgba(0, 61, 165, 0.2);
     position: relative;
 }
 
@@ -876,5 +876,5 @@ button, input, textarea {
 
 .profile-img:hover {
     transform: scale(1.03);
-    box-shadow: 0 8px 24px rgba(138, 112, 255, 0.25);
+    box-shadow: 0 8px 24px rgba(0, 61, 165, 0.25);
 }
