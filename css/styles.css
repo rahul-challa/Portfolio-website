@@ -537,28 +537,9 @@ button, input, textarea {
 }
 
 /*=============== PROJECTS ===============*/
-.projects-filters {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 1.5rem;
-    margin-bottom: 3rem;
-}
-
-.projects-filter {
-    font-size: var(--small-font-size);
-    font-weight: var(--font-medium);
-    color: var(--text-color);
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    transition: all var(--transition-speed);
-}
-
-.projects-filter:hover,
-.projects-filter.active {
-    color: #ffffff;
-    background-color: var(--primary-color);
+/* Projects section separator */
+.projects-container {
+    margin-top: 3rem;
 }
 
 .projects-container {

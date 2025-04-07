@@ -39,37 +39,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    /*=============== PROJECT FILTERING ===============*/
-    const filterButtons = document.querySelectorAll('.projects-filter');
-    const projectCards = document.querySelectorAll('.project-card');
-    
-    // Add click event to filter buttons
-    filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            // Remove active class from all buttons
-            document.querySelector('.projects-filter.active').classList.remove('active');
-            
-            // Add active class to clicked button
-            button.classList.add('active');
-            
-            // Get filter value
-            const filterValue = button.getAttribute('data-filter');
-            
-            // Filter projects
-            projectCards.forEach(card => {
-                if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
-                    card.style.display = '';
-                    
-                    // Add animation
-                    card.classList.add('fade-in');
-                    setTimeout(() => {
-                        card.classList.remove('fade-in');
-                    }, 500);
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        });
+    /*=============== PROJECT CARDS ANIMATION ===============*/
+    // Initialize all project cards with fade-in animation
+    document.querySelectorAll('.project-card').forEach(card => {
+        card.classList.add('fade-in');
     });
     
     /*=============== CONTACT FORM ===============*/
