@@ -334,12 +334,18 @@ button, input, textarea {
     gap: 1rem;
 }
 
-.home-img {
+.home-img img {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    top: 1rem;
+    border-radius: 50%;
+    width: 35vw;         /* increased from 25vw */
+    max-width: 400px;    /* increased from 300px */
+    height: auto;
+    box-shadow: 0 0 25px var(--main-color);
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
 }
+
 
 .scroll-down {
     text-align: center;
@@ -858,4 +864,13 @@ button, input, textarea {
 .profile-img:hover {
     transform: scale(1.03);
     box-shadow: 0 8px 24px rgba(255, 184, 28, 0.25);
+}
+
+.rounded-image {
+    border: 4px solid #ccc;   /* Light gray border */
+    border-radius: 50%;       /* Makes the image circular */
+    padding: 5px;             /* Optional spacing */
+    width: 150px;             /* Optional size - adjust as needed */
+    height: 150px;
+    object-fit: cover;        /* Ensures the image fits inside the circle */
 }
